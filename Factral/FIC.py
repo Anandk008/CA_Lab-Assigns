@@ -1,3 +1,4 @@
+# Run command for img - wget 'https://raw.githubusercontent.com/pvigier/fractal-image-compression/master/monkey.gif' as monkey.gif
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 from scipy import ndimage
