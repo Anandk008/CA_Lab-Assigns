@@ -108,11 +108,12 @@ def main():
     # img_name = sys.argv[1]
     img_name = "img1.bmp"
     img = cv2.imread("img1.bmp",0)
-    height = 512
-    width = 512
+    height,width = (img.shape)
     size=width*height
 
-
+    imgShow(img)
+    freqPrint(img)
+    equilize(img)
     if rank == 1 :
      comm.send(imgShow(img), dest=0)
     
