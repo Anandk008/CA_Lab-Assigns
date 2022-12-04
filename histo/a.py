@@ -43,7 +43,6 @@ def freqPrint(img):
         for j in range(0,y):
             temp = img[i][j];
             freq[temp]+=1
-        https://eeweb.engineering.nyu.edu/~yao/EL5123/image/lena_gray.bmp
     print("Frequency of pixels :")
     for i in freq:
         print(i);
@@ -79,7 +78,7 @@ def freqPrint(img):
                 tot=tot+freq[count];
             count+=1
 
-        hs.append(tot)
+        hs.append(totflower)
     return hs
     # result = grey(img)
     # return cv2.calcHist([result], [0], None, [256], [0,256])

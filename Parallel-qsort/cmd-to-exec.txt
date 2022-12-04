@@ -1,0 +1,2 @@
+compile - mpicc Hyperquick_sort.c -o a -lm
+execute - mpiexec -np # ./a inputfile.txt outputfile.txt 

@@ -1,0 +1,3 @@
+compile - g++ -Wall -pg Qsort.cpp -o a
+run - ./a
+- gprof a gmon.out > info.txt

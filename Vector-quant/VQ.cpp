@@ -329,9 +329,9 @@ int main()
 	}*/
 
 	//////////////Compression ratio////////////////////
-	cout << "À£ÁY€ñ" << ((Mx * Nx) * (log(256) / log(2))) / (((Mx * Nx) / (Ax * Bx)) * (log(64) / log(2))) << endl;
-	cout << "Žî€Ö" << (1 - ((((Mx * Nx) / (Ax * Bx)) * (log(64) / log(2))) / ((Mx * Nx) * (log(256) / log(2))))) * 100 << "%žê®Æ¶q" << endl;
-	cout << ((Mx * Nx) / (Ax * Bx)) * (log(64) / log(2)) << "žê®Æ¶q" << endl;
+	cout << "compression ratio - " << ((Mx * Nx) * (log(256) / log(2))) / (((Mx * Nx) / (Ax * Bx)) * (log(64) / log(2))) << endl;
+	cout << "decrease" << (1 - ((((Mx * Nx) / (Ax * Bx)) * (log(64) / log(2))) / ((Mx * Nx) * (log(256) / log(2))))) * 100 << " %material quantity" << endl;
+	cout << ((Mx * Nx) / (Ax * Bx)) * (log(64) / log(2)) << " - material quantity" << endl;
 
 	if (!bmpWrite(imageVec, "clena_clone_cpp.bmp"))
 	{

@@ -11,7 +11,14 @@
 9. Select pivot element of in each half and put at correct place using recursion*/
 
 #include<iostream>
+#include <fstream>
 using namespace std;
+
+void swap(int *i, int *j){
+    int *t = i;
+    i = j;
+    j = t;
+}
 
 int partition ( int a[], int start, int end) {
 
@@ -21,9 +28,10 @@ int partition ( int a[], int start, int end) {
     for ( int j = start; j <= end - 1; j++ ){
         if(a[j] < pivot ){
             i++;
-            int s = a[j];
-            a[j] = a[i];
-            a[i] = s;
+            // int s = a[j];
+            // a[j] = a[i];
+            // a[i] = s;
+            swap(a[i], a[j]);
         }
     }
     int s = a[i+1];

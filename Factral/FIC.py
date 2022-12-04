@@ -67,7 +67,7 @@ def compress(img, source_size, destination_size, step):
     for i in range(i_count):
         transformations.append([])
         for j in range(j_count):
-            print("{}/{} ; {}/{}".format(i, i_count, j, j_count))
+            # print("{}/{} ; {}/{}".format(i, i_count, j, j_count))
             transformations[i].append(None)
             min_d = float('inf')
             # Extract the destination block
@@ -137,6 +137,7 @@ def compression():
     plt.figure()
     plt.imshow(img, cmap='gray', interpolation='none')
     transformations = compress(img, 8, 4, 8)
+    print(transformations) 
     iterations = decompress(transformations, 8, 4, 8)
     plot_iterations(iterations, img)
     plt.show()
