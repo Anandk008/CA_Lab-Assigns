@@ -78,7 +78,7 @@ def freqPrint(img):
                 tot=tot+freq[count];
             count+=1
 
-        hs.append(totflower)
+        hs.append(tot)
     return hs
     # result = grey(img)
     # return cv2.calcHist([result], [0], None, [256], [0,256])
