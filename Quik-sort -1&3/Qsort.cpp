@@ -31,12 +31,13 @@ int partition ( int a[], int start, int end) {
             // int s = a[j];
             // a[j] = a[i];
             // a[i] = s;
-            swap(a[i], a[j]);
+            swap(&a[i], &a[j]);
         }
     }
-    int s = a[i+1];
-    a[i+1] = a[end];
-    a[end] = s;
+    // int s = a[i+1];
+    // a[i+1] = a[end];
+    // a[end] = s;
+    swap(&a[i+1], &a[end]);
     return (i + 1);
 }
 
@@ -65,11 +66,6 @@ int main(){
     }
     quick(a, 0, n - 1);
     printArr(a, n);
-   //  cout << "\n Array after Sorting : \n";
-   //  for(int i = 0; i < n; i++){
-   //      cout << a[i] << " ";
-   //   }
-   //   cout << "\n";
     return 0;
 }
 

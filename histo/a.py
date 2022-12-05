@@ -110,16 +110,17 @@ def main():
     height,width = (img.shape)
     size=width*height
 
-    imgShow(img)
-    freqPrint(img)
-    equilize(img)
+    # imgShow(img)
+    # freqPrint(img)
+    # equilize(img)
+
     if rank == 1 :
      comm.send(imgShow(img), dest=0)
     
-    if rank == 2 :
+    if rank == 1 :
      comm.send(freqPrint(img), dest=0)
 
-    if rank == 3 :
+    if rank == 1 :
      comm.send(equilize(img), dest=0)
 
     else:
